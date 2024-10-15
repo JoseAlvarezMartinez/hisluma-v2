@@ -1,5 +1,6 @@
 import styles from "./Home.module.css"
 import hislumaLogo from "../../assets/hisluma-logo.png"
+import ServiciosCard from "../../components/ServiciosCard/ServiciosCard"
 
 const Home = () => {
   return (
@@ -33,6 +34,13 @@ const Home = () => {
           <li className={styles.listItem}> <span className={styles.listaSpan}>Création de contenu dynamique: </span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
         </ul>
       </section>
+
+      <div className={styles.serviciosContainerFotos}>
+        <ServiciosCard titulo={"photographie"} />
+        <ServiciosCard titulo={"Marketing digital"} />
+        <ServiciosCard titulo={"contenu publicitaire"} />
+        <ServiciosCard titulo={"support linguistique"} />
+      </div>
     </>
   )
 }
