@@ -1,6 +1,7 @@
 import styles from "./Home.module.css"
 import hislumaLogo from "../../assets/hisluma-logo.png"
 import ServiciosCard from "../../components/ServiciosCard/ServiciosCard"
+import Services from "../Services/Services"
 
 const Home = () => {
   return (
@@ -19,6 +20,8 @@ const Home = () => {
           </div>
         </div>
       </header>
+
+      <Services/>
 
  
     </>
