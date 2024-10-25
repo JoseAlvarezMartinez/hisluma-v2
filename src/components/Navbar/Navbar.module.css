@@ -4,11 +4,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 .5rem;
+    padding: 0.5rem 1rem;
 }
-
+.navBarActivacion{
+    display: none;
+}
 .hislumaLogo {
     width: 6.563rem;
     height: 1.625rem;
     object-fit: cover;
+}
+.rightIcons{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+@media only screen and (min-width: 850px){
+    .menuHamburguesa{
+        display: none;
+    }
+    .navBarActivacion{
+        display: block;
+        list-style: none;
+        display: flex;
+    }
+    .navBarActivacion a{
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .rightIcons{
+        flex-direction: row-reverse;
+    }
 }
