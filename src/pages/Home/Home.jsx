@@ -20,27 +20,7 @@ const Home = () => {
         </div>
       </header>
 
-      <section className={styles.serviciosContainer}>
-        <h2 className={styles.nuestrosServicios}>Nos Services</h2>
-
-        <div className={styles.camaraBackground}>
-          <p>Service le plus choisi</p>
-        </div>
-
-        <h3 className={styles.videoTitulo}>Vidéo</h3>
-        <ul>
-          <li className={styles.listItem}><span className={styles.listaSpan}>Retransmission/Diffusion en direct d'événements:</span>conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
-          <li className={styles.listItem}><span className={styles.listaSpan}>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
-          <li className={styles.listItem}> <span className={styles.listaSpan}>Création de contenu dynamique: </span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
-        </ul>
-      </section>
-
-      <div className={styles.serviciosContainerFotos}>
-        <ServiciosCard titulo={"photographie"} />
-        <ServiciosCard titulo={"Marketing digital"} />
-        <ServiciosCard titulo={"contenu publicitaire"} />
-        <ServiciosCard titulo={"support linguistique"} />
-      </div>
+ 
     </>
   )
 }

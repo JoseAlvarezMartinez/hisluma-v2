@@ -87,31 +87,24 @@
 
 }
 
-.camaraBackground {
-    background-image: url(../../assets/camaraHome.jpg);
-    background-size: cover;
-    height: 13rem;   
+@media only screen and (min-width: 600px) {
+    .container {
+        align-items: start;
+    }
+
+    .heading2,
+    .frase {
+        text-align: start;
+        width: 25rem;
+    }
+
+    .info {
+        width: 20rem;
+    }
 }
-.nuestrosServicios{
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.serviciosContainer{
-    margin: 1rem;
-}
-.listaSpan{
-    font-weight: 600;
-}
-.listItem{
-    line-height: 1.5rem;
-    margin: 1rem 0;
-}
-.videoTitulo{
-    text-transform: uppercase;
-}
-.serviciosContainerFotos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
+
+@media only screen and (min-width: 800px){
+    .heading2,.frase{
+        width: 43%;
+    }
 }
