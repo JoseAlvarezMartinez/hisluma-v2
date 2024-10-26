@@ -2,6 +2,8 @@ import styles from "./Nosotros.module.css"
 import HislumaLogo from "../../assets/hisluma-logo.png"
 import { FaLinkedin } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa6";
+import Clientes from "../../components/Clientes/Clientes";
+import Resenia from "../../components/Resenias/Resenia";
 
 
 const Nosotros = () => {
@@ -79,32 +81,18 @@ const Nosotros = () => {
         <p className={styles.descripcionCliente}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
 
         <article className={styles.clientesContainer}>
-          <section>
-            <div className={styles.clienteFoto}></div>
-            <p>Client 1</p>
-          </section>
-
-          <section>
-            <div className={styles.clienteFoto}></div>
-            <p>Client 2</p>
-          </section>
-
-          <section>
-            <div className={styles.clienteFoto}></div>
-            <p>Client 3</p>
-          </section>
-
-          <section>
-            <div className={styles.clienteFoto}></div>
-            <p>Client 4</p>
-          </section>
-
-          <section>
-            <div className={styles.clienteFoto}></div>
-            <p>Client 5</p>
-          </section>
+          <Clientes />
+          <Clientes />
+          <Clientes />
+          <Clientes />
+          <Clientes />
         </article>
       </section>
+
+      <article className={styles.reseniasContainer}>
+        <Resenia/>
+        <Resenia/>
+      </article>
     </>
   )
 }

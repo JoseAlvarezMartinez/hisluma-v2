@@ -59,7 +59,8 @@
 .mainContainer,
 .equipoContainer,
 .miembrosContainer,
-.lema {
+.lema,
+.reseniasContainer {
     width: 90%;
     margin: 0 auto;
 }
@@ -217,11 +218,5 @@
     flex-wrap: wrap;
     gap: 1rem;
 
-    margin-top: 2rem;
-}
-
-.clienteFoto {
-    width: 4rem;
-    height: 4rem;
-    background-color: rgba(128, 128, 128, 0.575);
+    margin: 2rem 0;
 }
