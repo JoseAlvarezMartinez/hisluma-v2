@@ -1,5 +1,8 @@
 import styles from "./Servicios.module.css"
 import { IoCameraOutline } from "react-icons/io5";
+import { MdScreenshotMonitor } from "react-icons/md";
+import { TfiNotepad } from "react-icons/tfi";
+
 
 const Servicios = () => {
   return (
@@ -33,44 +36,9 @@ const Servicios = () => {
           <h3 className={styles.servicioCardTitulo}>Photographie</h3>
 
           <div className={styles.servicioCardContainer}>
+            
             <IoCameraOutline className={styles.camaraIcono} size={"4rem"} />
-            <ul>
-              <li>Photographie d'événements sportifs, compétitions, matchs, conférences, etc.
-              </li>
-              <li>Photographie promotionnelle</li>
-            </ul>
-          </div>
-        </article >
-        <article className={styles.servicioCard}>
-          <h3 className={styles.servicioCardTitulo}>Photographie</h3>
-
-          <div className={styles.servicioCardContainer}>
-            <IoCameraOutline className={styles.camaraIcono} size={"4rem"} />
-            <ul>
-              <li>Photographie d'événements sportifs, compétitions, matchs, conférences, etc.
-              </li>
-              <li>Photographie promotionnelle</li>
-            </ul>
-          </div>
-        </article >
-        <article className={styles.servicioCard}>
-          <h3 className={styles.servicioCardTitulo}>Photographie</h3>
-
-          <div className={styles.servicioCardContainer}>
-            <IoCameraOutline className={styles.camaraIcono} size={"4rem"} />
-            <ul>
-              <li>Photographie d'événements sportifs, compétitions, matchs, conférences, etc.
-              </li>
-              <li>Photographie promotionnelle</li>
-            </ul>
-          </div>
-        </article >
-        <article className={styles.servicioCard}>
-          <h3 className={styles.servicioCardTitulo}>Photographie</h3>
-
-          <div className={styles.servicioCardContainer}>
-            <IoCameraOutline className={styles.camaraIcono} size={"4rem"} />
-            <ul>
+            <ul className={styles.listaDesordenadaCard}>
               <li>Photographie d'événements sportifs, compétitions, matchs, conférences, etc.
               </li>
               <li>Photographie promotionnelle</li>
@@ -79,8 +47,8 @@ const Servicios = () => {
         </article >
       </section>
 
-
-      <h2>Votre événement, nos solutions     </h2>
+np
+      <h2>Votre événement, nos solutions </h2>
     </>
   )
 }

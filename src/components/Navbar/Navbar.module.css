@@ -6,41 +6,60 @@
     align-items: center;
     padding: 0.5rem 1rem;
 }
-.navBarActiva{
-    display: block;
+
+.navBarActivacion {
     position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    background-color: #0E0E0E;
 }
-.navBarInactiva{
+.navBarActivacion a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.navBarActivacion li{
+    margin: 0.9rem 0;
+}
+.navBarInactiva {
     display: none;
 }
+
 .hislumaLogo {
     width: 6.563rem;
     height: 1.625rem;
     object-fit: cover;
 }
-.rightIcons{
+
+.rightIcons {
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
 }
 
-@media only screen and (min-width: 850px){
-    .menuHamburguesa{
+@media only screen and (min-width: 850px) {
+    .menuHamburguesa {
         display: none;
     }
-    .navBarActivacion{
+
+    .navBarActivacion {
         display: block;
         list-style: none;
         display: flex;
     }
-    .navBarActivacion a{
+
+    .navBarActivacion a {
         color: #fff;
         text-decoration: none;
         margin: 0 0.5rem;
         font-size: 0.9rem;
     }
 
-    .rightIcons{
+    .rightIcons {
         flex-direction: row-reverse;
     }
 }

@@ -73,7 +73,6 @@
 .serviciosCardsContainer{
     width: 90%;
     margin: 0 auto;
-
 }
 .servicioCardTitulo{
     text-transform: uppercase;
@@ -81,6 +80,8 @@
     text-align: center;
     padding: 1.5rem 0;
     font-size: 1.4rem;
+}
+.listaDesordenadaCard{
 }
 @media only screen and (min-width: 600px){
     .headerContainer{
