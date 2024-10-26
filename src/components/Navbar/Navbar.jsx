@@ -17,14 +17,14 @@ const Navbar = () => {
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
   return (
     <nav className={styles.navbarContainer}>
       {isMobile ? (
         <>
-          <CiUser className={styles.userLogo} color="#fff" size={"2.5rem"} strokeWidth={"0.5px"} />
+          <CiUser className={styles.userLogo} color="#fff" size={"2rem"} strokeWidth={"0.5px"} />
           <Link to={"home"}>
             <img className={styles.hislumaLogo} src={HislumaLogo} alt="Hisluma Logo" />
           </Link>
@@ -43,17 +43,17 @@ const Navbar = () => {
             <div className={styles.menuHamburguesa} >
               <Hamburger toggled={isOpen} toggle={setOpen} color="#fff" />
             </div>
-
-            <ul className={isMobile > 800 ? "" : styles.navBarActivacion}>
-              <li><Link>Accueil</Link></li>
-              <li><Link>Services</Link></li>
-              <li><Link>Actualités</Link></li>
-              <li><Link>Calendrier</Link></li>
-              <li><Link>à propos de nous </Link></li>
-            </ul>
           </div>
         </>
       )}
+
+      <ul className={isOpen ? styles.navBarActivacion : styles.navBarInactiva}>
+        <li><Link>Accueil</Link></li>
+        <li><Link>Services</Link></li>
+        <li><Link>Actualités</Link></li>
+        <li><Link>Calendrier</Link></li>
+        <li><Link>à propos de nous </Link></li>
+      </ul>
     </nav>
   )
 }

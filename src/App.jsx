@@ -1,8 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
-import Home from "./pages/Home/Home"
-import Nous from "./pages/Nous/Nous"
-import Services from "./pages/Services/Services"
+import Servicios from "./pages/Servicios/Servicios"
 
 
 const App = () => {
@@ -11,11 +9,9 @@ const App = () => {
     <Navbar/>
 
     <Routes>
-      <Route path="home" element={<Home/>}/>
-      <Route path="nous" element={<Nous/>}/>
-      <Route path="services" element={<Services/>}/>
+      <Route path="services" element={<Servicios/>}/>
 
-      <Route path="*" element={<Navigate to={"home"}/>}/>
+      <Route path="*" element={<Navigate to={"services"}/>}/>
     </Routes>
     </>
   )
