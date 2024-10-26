@@ -1,4 +1,5 @@
 import styles from "./Nosotros.module.css"
+import HislumaLogo from "../../assets/hisluma-logo.png"
 
 const Nosotros = () => {
   return (
@@ -27,6 +28,38 @@ const Nosotros = () => {
           </span>
         </p>
       </main>
+
+      <section className={styles.containerInferior}>
+        <h2 className={styles.containerInferiorTitulo}>Pourquoi « Hisluma » ?</h2>
+        <p className={styles.containerInferiorParrafo}>Le terme «macondiano» fait référence au roman Cent ans de solitude de Gabriel García Márquez. C'est de là que vient le nom «Hisluma», un diminutif de «Historias de un Luchador Macondiano», qui signifie «Histoires d’un lutteur macondiano».</p>
+
+        <img className={styles.hislumaLogo} src={HislumaLogo} alt="" />
+      </section>
+
+      <section className={styles.equipoContainer}>
+        <h2 className={styles.equipoTitulo}>rencontrez notre équipe</h2>
+        <h3 className={styles.equipoSubtitulo}>Rencontrez l'équipe Hisluma</h3>
+
+
+        <div className={styles.miembrosContainer}>
+
+          <article className={styles.miembroInfo}>
+            <div className={styles.userFoto}></div>
+            <h2 className={styles.nombre}>Camilo Daza</h2>
+            <h3 className={styles.rol}>Fondateur</h3>
+            <p className={styles.descripcion}>Master en administration Sportive <span>
+              Master en Marketing Digital</span></p>
+          </article>
+
+          <article className={styles.miembroInfo}>
+            <div className={styles.userFoto}></div>
+            <h2 className={styles.nombre}>Camilo Daza</h2>
+            <h3 className={styles.rol}>Fondateur</h3>
+            <p className={styles.descripcion}>Master en administration Sportive <span>
+              Master en Marketing Digital</span></p>
+          </article>
+        </div>
+      </section>
     </>
   )
 }
