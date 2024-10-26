@@ -1,5 +1,8 @@
 import styles from "./Nosotros.module.css"
 import HislumaLogo from "../../assets/hisluma-logo.png"
+import { FaLinkedin } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa6";
+
 
 const Nosotros = () => {
   return (
@@ -49,6 +52,7 @@ const Nosotros = () => {
             <h3 className={styles.rol}>Fondateur</h3>
             <p className={styles.descripcion}>Master en administration Sportive <span>
               Master en Marketing Digital</span></p>
+            <FaLinkedin size={"2rem"} />
           </article>
 
           <article className={styles.miembroInfo}>
@@ -57,8 +61,49 @@ const Nosotros = () => {
             <h3 className={styles.rol}>Fondateur</h3>
             <p className={styles.descripcion}>Master en administration Sportive <span>
               Master en Marketing Digital</span></p>
+            <FaLinkedin size={"2rem"} />
           </article>
         </div>
+      </section>
+
+
+      <section className={styles.lema}>
+        <FaQuoteLeft color="#FFCC00" size={"4rem"} />
+        <p className={styles.duenioLema}>Notre objectif est de propulser votre événement en ligne grâce à un accompagnement sur mesure, spécialement conçu pour captiver votre audience et maximiser votre impact</p>
+        <p className={styles.duenioFirma}>- Camilo Daza, Fondateur</p>
+      </section>
+
+      <section className={styles.nuestrosClientes}>
+
+        <h2 className={styles.tituloCliente}>Nos clients</h2>
+        <p className={styles.descripcionCliente}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
+
+        <article className={styles.clientesContainer}>
+          <section>
+            <div className={styles.clienteFoto}></div>
+            <p>Client 1</p>
+          </section>
+
+          <section>
+            <div className={styles.clienteFoto}></div>
+            <p>Client 2</p>
+          </section>
+
+          <section>
+            <div className={styles.clienteFoto}></div>
+            <p>Client 3</p>
+          </section>
+
+          <section>
+            <div className={styles.clienteFoto}></div>
+            <p>Client 4</p>
+          </section>
+
+          <section>
+            <div className={styles.clienteFoto}></div>
+            <p>Client 5</p>
+          </section>
+        </article>
       </section>
     </>
   )
