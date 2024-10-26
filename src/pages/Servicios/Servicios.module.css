@@ -17,7 +17,7 @@
     color: #fff;
     text-align: center;
 }
-.tituloHeader{
+.tituloHeader{ 
     margin-bottom: 0;
 }
 .headerContainer{
@@ -30,7 +30,58 @@
     justify-content: center;
 
 }
+.mainContainer{
+    width: 90%;
+    margin: 5rem auto;
+}
+.mainTitulo{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.mainParrafo{
+    font-size: 0.9rem;
+}
+.videoContainer{
+    background-color:#F1F1F1;
+    padding: 1rem ;
+}
+.mainListaDesordenada li{
+    margin: 1rem 0;
+}
+.mainListaDesordenada{
+    padding: 0 1rem;
+}
 
+.servicioCard{
+    background-color: #F1F1F1;
+}
+.servicioCardContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.camaraIcono{
+    align-self: center;
+    justify-self: center;
+}
+.servicioCardContainer ul{
+    padding: 0;
+    padding-right: 1rem;
+}
+.servicioCardContainer li{
+    margin: 0.5rem 0;
+}
+.serviciosCardsContainer{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.servicioCardTitulo{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+}
 @media only screen and (min-width: 600px){
     .headerContainer{
         width: 60%;
