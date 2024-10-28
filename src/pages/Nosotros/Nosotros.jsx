@@ -1,9 +1,13 @@
 import styles from "./Nosotros.module.css"
-import HislumaLogo from "../../assets/hisluma-logo.png"
+
 import { FaLinkedin } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa6";
+
+
 import Clientes from "../../components/Clientes/Clientes";
 import Resenia from "../../components/Resenias/Resenia";
+import HislumaLogo from "../../assets/hisluma-logo.png";
+import Formulario from "../../components/Formulario/Formulario";
 
 
 const Nosotros = () => {
@@ -90,9 +94,12 @@ const Nosotros = () => {
       </section>
 
       <article className={styles.reseniasContainer}>
-        <Resenia/>
-        <Resenia/>
+        <Resenia />
+        <Resenia />
       </article>
+
+      <Formulario />
+
     </>
   )
 }
