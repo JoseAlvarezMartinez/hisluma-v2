@@ -8,6 +8,7 @@ import Clientes from "../../components/Clientes/Clientes";
 import Resenia from "../../components/Resenias/Resenia";
 import HislumaLogo from "../../assets/hisluma-logo.png";
 import Formulario from "../../components/Formulario/Formulario";
+import Footer from "../../components/Footer/Footer";
 
 
 const Nosotros = () => {
@@ -99,6 +100,7 @@ const Nosotros = () => {
       </article>
 
       <Formulario />
+      <Footer/>
 
     </>
   )
