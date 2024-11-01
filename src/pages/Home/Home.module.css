@@ -90,9 +90,6 @@
 .camaraHomeBackground {
     background-image: url(../../assets/camaraHome.jpg);
     background-size: cover;
-
-    max-width: 20rem;
-
     aspect-ratio: 1.5;
 
     position: relative
@@ -151,7 +148,14 @@
     
     text-transform: uppercase;
 }
+.temporadaContainer{
+    width: 90%;
+    margin: 0 auto;
+}
 
+.sliderContainer{
+    margin-top: 1rem;
+}
 @media only screen and (min-width: 600px) {
     .container {
         align-items: start;

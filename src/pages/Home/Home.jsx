@@ -2,9 +2,21 @@ import styles from "./Home.module.css"
 
 import hislumaLogo from "../../assets/hisluma-logo.png"
 import HomeCard from "../../components/HomeCard/HomeCard"
-
 import imagenPrueba from "../../assets/nosotrosBackground.jpg"
+import Temporada from "../../components/Temporada/Temporada"
+
+import Slider from "react-slick";
+
 const Home = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false
+  };
+
   return (
     <>
       <header className={styles.background}>
@@ -50,7 +62,17 @@ const Home = () => {
         </div>
       </main>
 
+      <section className={styles.temporadaContainer}>
+        <h2>Actualités</h2>
 
+        <Temporada />
+
+        {/* <Slider {...settings} className={styles.sliderContainer}>
+          <Temporada />
+          <Temporada />
+          <Temporada />
+        </Slider> */}
+      </section>
     </>
   )
 }
