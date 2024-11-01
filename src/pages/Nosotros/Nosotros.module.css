@@ -47,8 +47,7 @@
 }
 
 .introduccionContainer {
-    width: 90%;
-    margin: 5rem auto;
+    margin: 5rem 0;
 }
 
 .introduccionTitulo,
@@ -60,7 +59,8 @@
 .equipoContainer,
 .miembrosContainer,
 .lema,
-.reseniasContainer {
+.reseniasContainer,
+.nuestrosClientesContainer {
     width: 90%;
     margin: 0 auto;
 }
@@ -221,5 +221,94 @@
     margin: 2rem 0;
 }
 
+.fotoDemo {
+    height: 14rem;
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgba(128, 128, 128, 0.356);
+}
 
 
+
+@media only screen and (min-width: 600px) {
+
+    .mainContainer,
+    .equipoContainer,
+    .miembrosContainer,
+    .lema,
+    .reseniasContainer {
+        width: 80%;
+    }
+
+    .headerContainer {
+        width: 55%;
+    }
+
+    .mainContainer {
+        max-width: 30rem;
+    }
+
+    .introduccionContainer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .proposContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .fotoDemo {
+        height: auto;
+    }
+
+    .containerInferior {
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .containerInferior section {
+        width: 50%;
+    }
+
+    .miembrosContainer {
+        flex-direction: row;
+        margin: 2rem auto;
+    }
+
+    .lema {
+        max-width: 35rem;
+    }
+
+    .clientesContainer {
+        gap: 2.5rem;
+    }
+
+    .reseniasContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 900px){
+
+    .headerContainer{
+        width: 40%;
+    }
+    .mainContainer{
+        max-width: unset;
+        width: 70%;
+    }
+    .proposContainer{
+        gap: 4rem;
+    }
+    .containerInferior section{
+        max-width: 25rem;
+    }
+    .equipoContainer,.reseniasContainer{
+        width: 70%;
+    }
+}

@@ -3,6 +3,8 @@
     border: none;
 
     height: 12rem;
+    padding: 0.8rem;
+    margin-top: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -27,7 +29,8 @@
 
     min-width: 8rem;
 }
-.formulario input::placeholder{
+
+.formulario input::placeholder {
     padding-left: 1rem;
     font-size: 0.9rem;
     color: #000;
@@ -48,10 +51,12 @@
 .informacion {
     grid-area: consulta;
 }
-.botonContainer{
+
+.botonContainer {
     width: 95%;
     margin: 0 auto;
 }
+
 .boton {
     background-color: #FFCC00;
 
@@ -63,6 +68,7 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+
 .formularioContainer {
     width: 90%;
     margin: 0 auto;
@@ -94,4 +100,31 @@
     margin: 0;
 
     font-size: 0.813rem;
+}
+
+
+@media only screen and (min-width:600px) {
+    .formularioContainer {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .formularioContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        padding: 4rem;
+    }
+
+    .formulario {
+        height: 17rem;
+        padding: 0 1rem;
+    }
+
+    .informacion {
+        height: 5rem;
+    }
+
 }
