@@ -1,0 +1,97 @@
+.formulario {
+    background-color: #1D1D1D;
+    border: none;
+
+    height: 12rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formularioGrid {
+    display: grid;
+    grid-template-areas:
+        "nombre nom"
+        "email email"
+        "consulta consulta";
+    gap: 0.5rem;
+
+    padding: 0.5rem;
+}
+
+.formulario input {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 0.5rem 0;
+
+    min-width: 8rem;
+}
+.formulario input::placeholder{
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.nombreForm {
+    grid-area: nombre;
+}
+
+.nom {
+    grid-area: nom;
+}
+
+.correo {
+    grid-area: email;
+}
+
+.informacion {
+    grid-area: consulta;
+}
+.botonContainer{
+    width: 95%;
+    margin: 0 auto;
+}
+.boton {
+    background-color: #FFCC00;
+
+    border: none;
+    width: 100%;
+
+    padding: 0.5rem;
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.formularioContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formularioContainerBackground {
+    background-color: #F1F1F1;
+}
+
+.formularioTitulo {
+    font-size: 1.4rem;
+
+    padding-top: 2.25rem;
+}
+
+.formularioDescripcion {
+    font-size: 0.813rem;
+    margin-bottom: 1.5rem;
+}
+
+.informacionContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.informacionContainer p {
+    margin: 0;
+
+    font-size: 0.813rem;
+}
