@@ -156,6 +156,9 @@
 .sliderContainer{
     margin-top: 1rem;
 }
+.sliderContainer article{
+    height: 8rem;
+}
 @media only screen and (min-width: 600px) {
     .container {
         align-items: start;

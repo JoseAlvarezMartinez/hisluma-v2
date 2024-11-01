@@ -65,13 +65,13 @@ const Home = () => {
       <section className={styles.temporadaContainer}>
         <h2>Actualités</h2>
 
-        <Temporada />
+        <Temporada posicion={"portada"} />
 
-        {/* <Slider {...settings} className={styles.sliderContainer}>
-          <Temporada />
-          <Temporada />
-          <Temporada />
-        </Slider> */}
+        <Slider {...settings} className={styles.sliderContainer}>
+          <Temporada posicion={"slider"} />
+          <Temporada posicion={"slider"} />
+          <Temporada posicion={"slider"} />
+        </Slider>
       </section>
     </>
   )
