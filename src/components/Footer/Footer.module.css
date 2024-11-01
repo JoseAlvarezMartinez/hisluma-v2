@@ -51,3 +51,10 @@
     gap: 1rem;
     margin-top: 2rem;
 }
+
+@media only screen and (min-width: 900px){
+    .footerContainer{
+        flex-direction: row;
+        gap: 4rem;
+    }
+}

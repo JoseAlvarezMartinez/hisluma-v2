@@ -10,8 +10,8 @@ import HislumaLogo from "../../assets/hisluma-logo.png";
 import Formulario from "../../components/Formulario/Formulario";
 import Footer from "../../components/Footer/Footer";
 
-
 const Nosotros = () => {
+
   return (
     <>
       <header className={styles.headerBackground}>
@@ -108,7 +108,6 @@ const Nosotros = () => {
         <Resenia />
         <Resenia />
       </article>
-
       <Formulario />
       <Footer />
 

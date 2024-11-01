@@ -1,8 +1,9 @@
 import styles from "./Home.module.css"
-import hislumaLogo from "../../assets/hisluma-logo.png"
-import ServiciosCard from "../../components/ServiciosCard/ServiciosCard"
-import Services from "../Services/Services"
 
+import hislumaLogo from "../../assets/hisluma-logo.png"
+import HomeCard from "../../components/HomeCard/HomeCard"
+
+import imagenPrueba from "../../assets/nosotrosBackground.jpg"
 const Home = () => {
   return (
     <>
@@ -21,9 +22,35 @@ const Home = () => {
         </div>
       </header>
 
-      <Services/>
+      <main className={styles.mainContainer}>
+        <h2>Nos Services</h2>
 
- 
+        <div className={styles.camaraHomeBackground}>
+          <div className={styles.oscurecerFondoCamara}>
+            <p>Service le plus choisi</p>
+          </div>
+        </div>
+
+        <h3 className={styles.videoTitulo}>VIDÉO</h3>
+        <ul>
+          <li className={styles.listItem}><span className={styles.spanFont}>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
+          <li className={styles.listItem}><span className={styles.spanFont}>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
+          <li className={styles.listItem}><span className={styles.spanFont}>Création de contenu dynamique:</span> reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
+        </ul>
+
+        <article className={styles.homeCardContainer}>
+          <HomeCard titulo={"Photographie"} imagen={imagenPrueba} />
+          <HomeCard titulo={"Marketing digital"} imagen={imagenPrueba} />
+          <HomeCard titulo={"Contenu publicitaire"} imagen={imagenPrueba} />
+          <HomeCard titulo={"Support linguistique"} imagen={imagenPrueba} />
+        </article>
+
+        <div className={styles.btnContainer}>
+          <button className={styles.btnVerMas}>lire plus</button>
+        </div>
+      </main>
+
+
     </>
   )
 }
