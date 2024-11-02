@@ -2,7 +2,7 @@ import styles from "./Temporada.module.css"
 
 const Temporada = ({ posicion }) => {
     return (
-        posicion == "portada" ? <article className={`${styles.temporadaCard}`}>
+        posicion == "portada" ? <article className={`${styles.temporadaCard} ${styles.temporadaCardDesktop}`}>
             <section className={styles.oscurecerFondo}>
                 <div className={styles.temporadaEtiqueta}>
                     <p>Canoé-kayak</p>

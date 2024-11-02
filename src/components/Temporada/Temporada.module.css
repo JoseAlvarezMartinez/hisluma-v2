@@ -82,3 +82,8 @@ p {
 .temporadaParrafoSlider {
     font-size: 0.7rem;
 }
+@media only screen and (min-width: 800px){
+    .temporadaCardDesktop{
+        height: 100%;
+    }
+}

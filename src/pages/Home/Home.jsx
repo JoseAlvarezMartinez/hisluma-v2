@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom"
+
 import styles from "./Home.module.css"
 
 import hislumaLogo from "../../assets/hisluma-logo.png"
@@ -10,7 +13,7 @@ import Footer from "../../components/Footer/Footer"
 
 import Slider from "react-slick";
 import Partidos from "../../components/Partidos/Partidos"
-import { Link } from "react-router-dom"
+
 
 const Home = () => {
   var settings = {
@@ -21,7 +24,17 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false
   };
+  const [vistaDesktop, setVistaDesktop] = useState(window.innerWidth <= 800);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setVistaDesktop(window.innerWidth <= 800);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <>
       <header className={styles.background}>
@@ -71,20 +84,47 @@ const Home = () => {
         </div>
       </main >
 
+
+
+
       <section className={styles.temporadaContainer}>
         <h2>Actualités</h2>
 
-        <Temporada posicion={"portada"} />
+        {
+          vistaDesktop ? (
+            <>
+              <Temporada posicion={"portada"} />
 
-        <Slider {...settings} className={styles.sliderContainer}>
-          <Temporada posicion={"slider"} />
-          <Temporada posicion={"slider"} />
-          <Temporada posicion={"slider"} />
-        </Slider>
-        <div className={styles.btnContainerVisiter}>
-          <button className={styles.btnVerMas}>Visiter Les actus</button>
-        </div>
+              <Slider {...settings} className={styles.sliderContainer}>
+                <Temporada posicion={"slider"} />
+                <Temporada posicion={"slider"} />
+                <Temporada posicion={"slider"} />
+              </Slider>
+              <div className={styles.btnContainerVisiter}>
+                <button className={styles.btnVerMas}>Visiter Les actus</button>
+              </div>
+            </>
+          ) : (
+
+            <section className={styles.actualitesContainer}>
+              <Temporada posicion={"portada"} />
+
+              <div className={styles.temporadaGridDerecha}>
+                <Temporada posicion={"slider"} />
+                <Temporada posicion={"slider"} />
+              </div>
+            </section>
+          )
+        }
+
+
       </section>
+
+
+
+
+
+
 
       <article className={styles.destacadoContainer}>
         <img className={styles.destacadoImagen} src={destacadoBackground} alt="" />
@@ -102,6 +142,8 @@ const Home = () => {
           <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
         </section>
       </article>
+
+
 
       <section className={styles.partidosContainer}>
         <h2 className={styles.partidosContainerTitulo}>Prochains matchs</h2>

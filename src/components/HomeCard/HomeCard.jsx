@@ -2,7 +2,9 @@ import styles from "./HomeCard.module.css";
 
 const HomeCard = ({ titulo, imagen }) => {
     return (
-        <div style={{
+        <div 
+        className={styles.homeCardContainer}
+        style={{
             backgroundImage: `url(${imagen})`,
             backgroundSize: "cover",
             maxWidth:"25rem",
