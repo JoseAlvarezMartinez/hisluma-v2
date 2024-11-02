@@ -345,7 +345,9 @@
     width: 90%;
     margin: 0 auto;
 }
-
+.explorarContainer{
+    margin: 3rem 0;
+}
 @media only screen and (min-width: 600px) {
     .container {
         align-items: start;
@@ -359,6 +361,41 @@
 
     .info {
         width: 20rem;
+    }
+
+    .camaraHomeBackgroundContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .camaraHomeBackground{
+       max-width: 16rem;
+       height: 100%;
+       background-position: 60%;
+    }
+    .listaDesordenada{
+        padding: 0;
+    }
+    .homeCardContainer{
+        grid-template-columns: repeat(4,1fr);
+        width: unset;
+    }
+    .destacadoContainer{
+        width: 60%;
+    }
+    .partidosContainer{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .visitarCalendario,.sincronizarCalendario{
+        width: 13rem;
+    }
+    .oscurecerFondoExperiencia{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .experienciaTitulo{
+        max-width: 14rem;
     }
 }
 

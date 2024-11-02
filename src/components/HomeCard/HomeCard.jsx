@@ -5,8 +5,7 @@ const HomeCard = ({ titulo, imagen }) => {
         <div style={{
             backgroundImage: `url(${imagen})`,
             backgroundSize: "cover",
-
-            maxWidth:"13rem",
+            maxWidth:"25rem",
             aspectRatio: 1,
             position:"relative"
         }}>

@@ -42,19 +42,23 @@ const Home = () => {
       <main className={styles.mainContainer}>
         <h2>Nos Services</h2>
 
-        <div className={styles.camaraHomeBackground}>
-          <div className={styles.oscurecerFondoCamara}>
-            <p>Service le plus choisi</p>
+
+        <div className={styles.camaraHomeBackgroundContainer}>
+          <div className={styles.camaraHomeBackground}>
+            <div className={styles.oscurecerFondoCamara}>
+              <p>Service le plus choisi</p>
+            </div>
           </div>
+
+          <section>
+            <h3 className={styles.videoTitulo}>VIDÉO</h3>
+            <ul className={styles.listaDesordenada}>
+              <li className={styles.listItem}><span className={styles.spanFont}>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
+              <li className={styles.listItem}><span className={styles.spanFont}>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
+              <li className={styles.listItem}><span className={styles.spanFont}>Création de contenu dynamique:</span> reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
+            </ul>
+          </section>
         </div>
-
-        <h3 className={styles.videoTitulo}>VIDÉO</h3>
-        <ul >
-          <li className={styles.listItem}><span className={styles.spanFont}>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
-          <li className={styles.listItem}><span className={styles.spanFont}>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
-          <li className={styles.listItem}><span className={styles.spanFont}>Création de contenu dynamique:</span> reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
-        </ul>
-
         <article className={styles.homeCardContainer}>
           <HomeCard titulo={"Photographie"} imagen={imagenPrueba} />
           <HomeCard titulo={"Marketing digital"} imagen={imagenPrueba} />
@@ -65,7 +69,7 @@ const Home = () => {
         <div className={styles.btnContainer}>
           <button className={styles.btnVerMas}>lire plus</button>
         </div>
-      </main>
+      </main >
 
       <section className={styles.temporadaContainer}>
         <h2>Actualités</h2>

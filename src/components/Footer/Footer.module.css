@@ -53,6 +53,11 @@
     justify-content: center;
 }
 
+@media only screen and (min-width: 600px){
+    .redesContainer{
+      justify-content: start;
+    }
+}
 @media only screen and (min-width: 900px){
     .footerContainer{
         flex-direction: row;
