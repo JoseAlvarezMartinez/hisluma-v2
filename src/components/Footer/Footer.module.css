@@ -16,8 +16,7 @@
     padding: 1rem 0;
 }
 .hislumaLogo{
-    width: 8rem;
-    height: 2rem;
+    width: 12rem;
     object-fit: cover;
 }
 .hislumaTv{
@@ -62,5 +61,9 @@
     .footerContainer{
         flex-direction: row;
         gap: 4rem;
+    }
+    .hislumaLogo{
+        width: unset;
+        height: 4rem;
     }
 }

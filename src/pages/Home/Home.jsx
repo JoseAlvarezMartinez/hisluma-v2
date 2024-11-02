@@ -105,15 +105,20 @@ const Home = () => {
               </div>
             </>
           ) : (
+            <>
+              <section className={styles.actualitesContainer}>
+                <Temporada posicion={"portada"} />
 
-            <section className={styles.actualitesContainer}>
-              <Temporada posicion={"portada"} />
+                <div className={styles.temporadaGridDerecha}>
+                  <Temporada posicion={"slider"} />
+                  <Temporada posicion={"slider"} />
+                </div>
 
-              <div className={styles.temporadaGridDerecha}>
-                <Temporada posicion={"slider"} />
-                <Temporada posicion={"slider"} />
+              </section>
+              <div className={styles.btnContainerVisiter}>
+                <button className={styles.btnVerMas}>Visiter Les actus</button>
               </div>
-            </section>
+            </>
           )
         }
 
@@ -125,68 +130,81 @@ const Home = () => {
 
 
 
+      <section className={styles.responsiveDestacadoPartidos}>
+        <article className={styles.destacadoContainer}>
+          <img className={styles.destacadoImagen} src={destacadoBackground} alt="" />
 
-      <article className={styles.destacadoContainer}>
-        <img className={styles.destacadoImagen} src={destacadoBackground} alt="" />
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+          <section>
+            <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+            <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+          </section>
+        </article>
 
-        <section>
-          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
-          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+
+
+        <section className={styles.partidosContainer}>
+          <h2 className={styles.partidosContainerTitulo}>Prochains matchs</h2>
+          <section className={styles.partidosGrid}>
+            <Partidos />
+            <Partidos />
+            <Partidos />
+            <Partidos />
+          </section>
+          <div className={styles.botonesContainer}>
+            <button className={styles.visitarCalendario}>Visiter Le Calendrier</button>
+            <button className={styles.sincronizarCalendario}>Synchroniser calendrier</button>
+          </div>
         </section>
-        <section>
-          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
-          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
-        </section>
-        <section>
-          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
-          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
-        </section>
-      </article>
-
-
-
-      <section className={styles.partidosContainer}>
-        <h2 className={styles.partidosContainerTitulo}>Prochains matchs</h2>
-        <section className={styles.partidosGrid}>
-          <Partidos />
-          <Partidos />
-          <Partidos />
-          <Partidos />
-        </section>
-        <div className={styles.botonesContainer}>
-          <button className={styles.visitarCalendario}>Visiter Le Calendrier</button>
-          <button className={styles.sincronizarCalendario}>Synchroniser calendrier</button>
-        </div>
       </section>
+      <section>
+        <section className={styles.experienciaContainer}>
+          <section className={styles.experienciaBackground}>
+            <section className={styles.oscurecerFondoExperiencia}>
+              <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
-      <section className={styles.experienciaContainer}>
-        <section className={styles.experienciaBackground}>
-          <section className={styles.oscurecerFondoExperiencia}>
-            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
+              <Link>Abonne-toi</Link>
+            </section>
+          </section>
+        </section>
+        <section className={styles.experienciaContainer}>
+          <section className={styles.experienciaBackground}>
+            <section className={styles.oscurecerFondoExperiencia}>
+              <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
-            <Link>Abonne-toi</Link>
+              <Link>Abonne-toi</Link>
+            </section>
+          </section>
+        </section>
+        <section className={styles.experienciaContainer}>
+          <section className={styles.experienciaBackground}>
+            <section className={styles.oscurecerFondoExperiencia}>
+              <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
+
+              <Link>Abonne-toi</Link>
+            </section>
           </section>
         </section>
       </section>
-      <section className={styles.experienciaContainer}>
-        <section className={styles.experienciaBackground}>
-          <section className={styles.oscurecerFondoExperiencia}>
-            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
-
-            <Link>Abonne-toi</Link>
-          </section>
-        </section>
-      </section>
-      <section className={styles.experienciaContainer}>
-        <section className={styles.experienciaBackground}>
-          <section className={styles.oscurecerFondoExperiencia}>
-            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
-
-            <Link>Abonne-toi</Link>
-          </section>
-        </section>
-      </section>
-
       <section className={styles.explorarContainer}>
         <h2 className={styles.explorarTitulo}>Explorer d´ autres sujets</h2>
 
