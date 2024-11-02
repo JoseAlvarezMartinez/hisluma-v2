@@ -1,4 +1,4 @@
-.headerBackground{
+.headerBackground {
     background-image: url(../../assets/serviciosBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,20 +7,25 @@
 
     position: relative;
 }
-.oscurecerFondo{
+
+.oscurecerFondo {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
-.tituloHeader,.descripcionHeader{
+
+.tituloHeader,
+.descripcionHeader {
     color: #fff;
     text-align: center;
 }
-.tituloHeader{ 
+
+.tituloHeader {
     margin-bottom: 0;
 }
-.headerContainer{
+
+.headerContainer {
     height: 75vh;
     width: 90%;
     margin: 0 auto;
@@ -30,67 +35,110 @@
     justify-content: center;
 
 }
-.mainContainer{
-    width: 90%;
-    margin: 5rem auto;
-}
-.mainTitulo{
+
+.introduccionTitulo {
+    font-weight: 600;
     font-size: 1rem;
-    text-transform: uppercase;
-}
-.mainParrafo{
-    font-size: 0.9rem;
-}
-.videoContainer{
-    background-color:#F1F1F1;
-    padding: 1rem ;
-}
-.mainListaDesordenada li{
-    margin: 1rem 0;
-}
-.mainListaDesordenada{
-    padding: 0 1rem;
 }
 
-.servicioCard{
-    background-color: #F1F1F1;
+.introduccionContainer {
+    width: 90%;
+    margin: 4rem auto;
 }
-.servicioCardContainer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.introduccionParrafo {
+    color: #000;
+    margin-top: 2rem;
 }
-.camaraIcono{
-    align-self: center;
-    justify-self: center;
-}
-.servicioCardContainer ul{
-    padding: 0;
-    padding-right: 1rem;
-}
-.servicioCardContainer li{
-    margin: 0.5rem 0;
-}
-.serviciosCardsContainer{
+
+.videoContainer,.serviciosContainer,.reseniasContainer{
     width: 90%;
     margin: 0 auto;
 }
-.servicioCardTitulo{
+
+.videoContainerBackground {
+    background-color: #F1F1F1;
+    padding: 1rem 0;
+}
+
+.videoContainer h2,.reseniaTitulo {
     text-transform: uppercase;
-    margin-bottom: 0;
+    font-weight: 600;
+}
+.listaDesordenada{
+    padding-left: 1rem;
+}
+.listaDesordenada li span {
+    font-weight: 600;
+}
+
+.listaDesordenada li {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.serviciosContainerInferior{
+    width: 8rem;
+}
+.serviciosLista{
+    padding-left: 1rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+
+}
+.servicioContainer{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    background: #F1F1F1;
+
+    /* padding: 0.5rem 2rem; */
+}
+.serviciosContainer{
+    width: 90%;
+    margin: 1.5rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.serviciosTitulo{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.serviciosLista li{
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+.reseniaTitulo{
+    font-size: 1.2rem;
     text-align: center;
-    padding: 1.5rem 0;
-    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }
-.listaDesordenadaCard{
+.reseniaDescrip{
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
 }
-@media only screen and (min-width: 600px){
-    .headerContainer{
+.reseniasContainer{
+    margin: 3rem auto;
+}
+@media only screen and (min-width: 600px) {
+    .headerContainer {
         width: 60%;
+    }
+
+    .introduccionContainer {
+        width: 70%;
+        margin: 4rem auto;
     }
 }
 
-@media only screen and (min-width: 800px){
-    .headerContainer{
+@media only screen and (min-width: 800px) {
+    .headerContainer {
         width: 40%;
     }
 }
