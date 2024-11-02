@@ -1,7 +1,7 @@
 .temporadaCard {
     background-image: url(../../assets/temporada.png);
     background-size: cover;
-    max-width: 20rem;
+    max-width: 25rem;
     height: 15rem;
 
     position: relative;
@@ -35,7 +35,7 @@ p{
     width: 60%;
     position: relative;
     left: -1rem;
-    top: -3rem;
+    top: -2rem;
     clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
 }
 .temporadaEtiqueta p{
@@ -46,7 +46,7 @@ p{
     padding-left: 1rem;
 }
 .temporadaEtiquetaSlider{
-    top: 0;
+    top: 0.5rem;
     width: 65%;
     clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 28px, 100% 100%, 0 100%);
     left: -0.2rem;

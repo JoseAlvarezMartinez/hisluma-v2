@@ -3,15 +3,19 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95vh;
+
     position: relative;
+    height: 95vh;
 }
 
 .oscurecerFondo,
-.oscurecerFondoCamara {
+.oscurecerFondoCamara,
+.oscurecerFondoExperiencia {
     position: absolute;
+
     width: 100%;
     height: 100%;
+
     background-color: rgba(0, 0, 0, 0.741);
 }
 
@@ -42,30 +46,36 @@
 
 .button {
     background-color: #FFD700;
-    color: #000;
+
     padding: 0.5rem;
+    padding-left: 1.2rem;
+
     border: 1px solid #FFD700;
+
     position: relative;
+
     width: 70%;
     min-width: 14rem;
     max-width: 15rem;
+
     text-align: start;
-    padding-left: 1.2rem;
+    color: #000;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .arrow {
     background-color: #1E1E1E;
+
     color: #FFD700;
     padding: 10px;
     clip-path: polygon(24% 0%, 100% 0, 100% 100%, 0 100%);
-
 
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +92,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
+
     height: 85vh;
     width: 90%;
     margin: 0 auto;
@@ -106,13 +117,16 @@
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
+
     padding-left: 1rem;
 }
-.videoTitulo{
+
+.videoTitulo {
     color: #000;
     text-align: start;
     font-weight: 700;
 }
+
 .mainContainer {
     width: 90%;
     margin: 0 auto;
@@ -134,7 +148,8 @@
     gap: 1rem;
 }
 
-.btnContainer {
+.btnContainer,
+.btnContainerVisiter {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
@@ -145,20 +160,184 @@
     border: none;
     padding: 0.5rem 2rem;
     font-weight: 600;
-    
+
     text-transform: uppercase;
 }
-.temporadaContainer{
+
+.temporadaContainer {
     width: 90%;
     margin: 0 auto;
 }
 
-.sliderContainer{
+.sliderContainer {
     margin-top: 1rem;
 }
-.sliderContainer article{
+
+.sliderContainer article {
     height: 8rem;
 }
+
+.btnContainerVisiter {
+    margin-top: 2rem;
+}
+
+.destacadoContainer {
+    width: 90%;
+    margin: 2rem auto 0;
+}
+
+.destacadoImagen {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.destacadoTitulo {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.destacadoDescripcion {
+    color: #000;
+    margin-top: 0;
+    font-size: 0.8rem;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+    padding-bottom: 1rem;
+}
+
+
+
+.visitarCalendario,
+.sincronizarCalendario {
+    background-color: #FFCC00;
+    border: none;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 0.9rem;
+
+    width: 9rem;
+}
+
+.sincronizarCalendario {
+    background-color: unset;
+    border: 1px solid #FFCC00;
+    color: #fff;
+}
+
+.botonesContainer {
+    display: flex;
+    gap: 0.5rem;
+
+    width: 90%;
+    margin: 1rem auto 0;
+    padding-bottom: 1rem;
+}
+
+.partidosGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.partidosContainerTitulo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-top: 2rem;
+}
+
+.partidosContainer {
+    background-color: #1D1D1D;
+}
+
+.experienciaContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.experienciaBackground {
+    background-image: url(../../assets/experienciaBackground.png);
+    position: relative;
+    background-size: cover;
+    max-width: 26rem;
+    height: 6rem;
+
+    margin-top: 1rem;
+}
+
+.experienciaBackground a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.experienciaBackground a::after {
+    content: ">";
+    color: #FFCC00;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+}
+
+.experienciaTitulo {
+    color: #fff;
+    font-size: 1rem;
+
+    width: 10rem;
+    padding-left: 1rem;
+}
+
+.experienciaTitulo span {
+    color: #FFCC00;
+}
+
+.oscurecerFondoExperiencia {
+    display: flex;
+    align-items: center;
+}
+
+.explorarBackground {
+    width: 8rem;
+    height: 8rem;
+    background-image: url(../../assets/explorarBackground.png);
+    position: relative;
+    background-size: cover;
+}
+
+.explorarBackgroundContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explorarBackgroundContainer h3 {
+    margin-top: 0;
+
+}
+
+.explorarTitulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.explorarContainerFlex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 @media only screen and (min-width: 600px) {
     .container {
         align-items: start;

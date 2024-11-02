@@ -1,0 +1,23 @@
+
+.partidoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partidoEquipos{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    text-align: center;
+
+}
+.partidoEstadio{
+    margin-top: 0.5rem;
+}
+.partidoFecha{
+    margin-bottom: 0.5rem;
+}
+.partidoFecha,.partidoEstadio{
+    font-weight: 200;
+    text-align: center;
+}

@@ -1,11 +1,16 @@
 import styles from "./Home.module.css"
 
 import hislumaLogo from "../../assets/hisluma-logo.png"
-import HomeCard from "../../components/HomeCard/HomeCard"
 import imagenPrueba from "../../assets/nosotrosBackground.jpg"
+import destacadoBackground from "../../assets/destacadoBackground.png"
+
+import HomeCard from "../../components/HomeCard/HomeCard"
 import Temporada from "../../components/Temporada/Temporada"
+import Footer from "../../components/Footer/Footer"
 
 import Slider from "react-slick";
+import Partidos from "../../components/Partidos/Partidos"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   var settings = {
@@ -72,7 +77,93 @@ const Home = () => {
           <Temporada posicion={"slider"} />
           <Temporada posicion={"slider"} />
         </Slider>
+        <div className={styles.btnContainerVisiter}>
+          <button className={styles.btnVerMas}>Visiter Les actus</button>
+        </div>
       </section>
+
+      <article className={styles.destacadoContainer}>
+        <img className={styles.destacadoImagen} src={destacadoBackground} alt="" />
+
+        <section>
+          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+        </section>
+        <section>
+          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+        </section>
+        <section>
+          <h2 className={styles.destacadoTitulo}>Á LA UNE / DESTACADO</h2>
+          <p className={styles.destacadoDescripcion}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisl quis ornare eleifend, dui leo viverra ligula</p>
+        </section>
+      </article>
+
+      <section className={styles.partidosContainer}>
+        <h2 className={styles.partidosContainerTitulo}>Prochains matchs</h2>
+        <section className={styles.partidosGrid}>
+          <Partidos />
+          <Partidos />
+          <Partidos />
+          <Partidos />
+        </section>
+        <div className={styles.botonesContainer}>
+          <button className={styles.visitarCalendario}>Visiter Le Calendrier</button>
+          <button className={styles.sincronizarCalendario}>Synchroniser calendrier</button>
+        </div>
+      </section>
+
+      <section className={styles.experienciaContainer}>
+        <section className={styles.experienciaBackground}>
+          <section className={styles.oscurecerFondoExperiencia}>
+            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
+
+            <Link>Abonne-toi</Link>
+          </section>
+        </section>
+      </section>
+      <section className={styles.experienciaContainer}>
+        <section className={styles.experienciaBackground}>
+          <section className={styles.oscurecerFondoExperiencia}>
+            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
+
+            <Link>Abonne-toi</Link>
+          </section>
+        </section>
+      </section>
+      <section className={styles.experienciaContainer}>
+        <section className={styles.experienciaBackground}>
+          <section className={styles.oscurecerFondoExperiencia}>
+            <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
+
+            <Link>Abonne-toi</Link>
+          </section>
+        </section>
+      </section>
+
+      <section className={styles.explorarContainer}>
+        <h2 className={styles.explorarTitulo}>Explorer d´ autres sujets</h2>
+
+
+        <section className={styles.explorarContainerFlex}>
+          <section className={styles.explorarBackground}>
+            <section className={`${styles.oscurecerFondo} ${styles.explorarBackgroundContainer}`}>
+              <h3>Podcast</h3>
+            </section>
+          </section>
+
+          <section className={styles.explorarBackground}>
+            <section className={`${styles.oscurecerFondo} ${styles.explorarBackgroundContainer}`}>
+              <h3>Podcast</h3>
+            </section>
+          </section>
+        </section>
+
+      </section>
+
+
+
+      <Footer />
     </>
   )
 }
