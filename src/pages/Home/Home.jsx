@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         <h3 className={styles.videoTitulo}>VIDÉO</h3>
-        <ul>
+        <ul >
           <li className={styles.listItem}><span className={styles.spanFont}>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
           <li className={styles.listItem}><span className={styles.spanFont}>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
           <li className={styles.listItem}><span className={styles.spanFont}>Création de contenu dynamique:</span> reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>

@@ -125,6 +125,7 @@
     color: #000;
     text-align: start;
     font-weight: 700;
+    margin-top: 1rem;
 }
 
 .mainContainer {
@@ -142,10 +143,12 @@
 }
 
 .homeCardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+
+    margin: 2rem auto;
+    width: 90%;
 }
 
 .btnContainer,
@@ -183,7 +186,7 @@
 
 .destacadoContainer {
     width: 90%;
-    margin: 2rem auto 0;
+    margin: 2rem auto;
 }
 
 .destacadoImagen {
@@ -234,6 +237,8 @@
     width: 90%;
     margin: 1rem auto 0;
     padding-bottom: 1rem;
+
+    justify-content: center;
 }
 
 .partidosGrid {
@@ -251,12 +256,11 @@
     font-size: 1.2rem;
     text-align: center;
     text-transform: uppercase;
-
-    padding-top: 2rem;
 }
 
 .partidosContainer {
     background-color: #1D1D1D;
+    padding: 2rem 0;
 }
 
 .experienciaContainer {
@@ -268,7 +272,7 @@
     background-image: url(../../assets/experienciaBackground.png);
     position: relative;
     background-size: cover;
-    max-width: 26rem;
+
     height: 6rem;
 
     margin-top: 1rem;
@@ -294,7 +298,7 @@
     color: #fff;
     font-size: 1rem;
 
-    width: 10rem;
+    max-width: 10rem;
     padding-left: 1rem;
 }
 
@@ -308,7 +312,8 @@
 }
 
 .explorarBackground {
-    width: 8rem;
+    max-width: 26rem;
+    width: 100%;
     height: 8rem;
     background-image: url(../../assets/explorarBackground.png);
     position: relative;
@@ -336,6 +341,9 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+    width: 90%;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {

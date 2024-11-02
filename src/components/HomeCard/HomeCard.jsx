@@ -5,12 +5,13 @@ const HomeCard = ({ titulo, imagen }) => {
         <div style={{
             backgroundImage: `url(${imagen})`,
             backgroundSize: "cover",
-            width: "10rem",
+
+            maxWidth:"13rem",
             aspectRatio: 1,
             position:"relative"
         }}>
             <section className={styles.oscurecerFondo}>
-                <h3>{titulo}</h3>
+                <h3 className={styles.homeCardTitulo}>{titulo}</h3>
             </section>
         </div>
     )
