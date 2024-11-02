@@ -315,4 +315,10 @@
     .equipoContainer,.reseniasContainer{
         width: 70%;
     }
+    .nuestrosClientesContainer{
+        height: 24rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
