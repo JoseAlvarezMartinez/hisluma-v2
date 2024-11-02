@@ -9,6 +9,7 @@
     margin-bottom: 0;
     font-size: 0.813rem;
     font-weight: 600;
+    color: #000;
 }
 
 .reseniaSuperior section p {
@@ -16,6 +17,7 @@
 
     font-size: 0.75rem;
     font-weight: 400;
+    color: #000;
 }
 
 .reseniaFoto {
@@ -26,6 +28,7 @@
 .reseniaDescripcion{
     font-size: 0.813rem;
     font-weight: 400;
+    color: #000;
     line-height: 1.357;
 }
 

@@ -80,6 +80,7 @@
 
 .formularioTitulo {
     font-size: 1.4rem;
+    color: #000;
 
     padding-top: 2.25rem;
 }
@@ -87,6 +88,7 @@
 .formularioDescripcion {
     font-size: 0.813rem;
     margin-bottom: 1.5rem;
+    color: #000;
 }
 
 .informacionContainer {
@@ -94,11 +96,13 @@
     align-items: center;
     gap: 0.5rem;
     margin: 1rem 0;
+    
 }
 
 .informacionContainer p {
     margin: 0;
 
+    color: #000;
     font-size: 0.813rem;
 }
 

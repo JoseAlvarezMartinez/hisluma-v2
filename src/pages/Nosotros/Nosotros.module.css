@@ -53,6 +53,7 @@
 .introduccionTitulo,
 .introduccionParrafo {
     font-size: 0.875rem;
+    color: #000;
 }
 
 .mainContainer,
@@ -76,6 +77,7 @@
 
     font-size: 0.875rem;
     line-height: 1.25rem;
+    color: #000;
 }
 
 .mainTitulo {
@@ -102,6 +104,7 @@
 .containerInferiorParrafo {
     font-weight: 400;
     font-size: 0.875rem;
+    color: #000;
     line-height: 1.25rem;
 }
 
@@ -171,6 +174,8 @@
 .descripcion {
     font-size: 0.813rem;
     font-weight: 500;
+    color: #000;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
@@ -185,6 +190,7 @@
     font-weight: 600;
     font-size: 0.875rem;
     text-transform: uppercase;
+    color: #000;
 }
 
 .duenioFirma {
@@ -210,6 +216,7 @@
     font-size: 0.875rem;
     text-align: center;
     margin-top: 0;
+    color: #000;
 }
 
 .clientesContainer {
@@ -227,9 +234,6 @@
     max-width: 30rem;
     background-color: rgba(128, 128, 128, 0.356);
 }
-
-
-
 @media only screen and (min-width: 600px) {
 
     .mainContainer,

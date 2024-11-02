@@ -12,6 +12,7 @@ const App = () => {
 
     <Routes>
       <Route path="home" element={<Home/>}/>
+      <Route path="nous" element={<Nosotros/>}/>
 
       <Route path="*" element={<Navigate to={"home"}/>}/>
     </Routes>
