@@ -106,18 +106,44 @@ const Servicios = () => {
         </section>
       </main>
 
-      <section>
-        <h2>Votre événement, nos solutions</h2>
+      <section className={styles.caracteristicasContainer}>
+        <h2 className={styles.caracteristicasTitulo}>Votre événement, nos solutions</h2>
 
-        <PiSwapThin />
-        <LiaCertificateSolid />
-        <FaRegHandshake />
-        <IoIosTrendingUp />
+        <article className={styles.caracteristicaContainer}>
+          <FaRegHandshake size={"2.4rem"} />
+          <h3 className={styles.caracteristicaTitulo}>Engagement</h3>
+          <p className={styles.caracteristicaParrafo}>Nous nous investissons avec énergie dans chaque projet</p>
+        </article>
+        <article className={styles.caracteristicaContainer}>
+          <PiSwapThin size={"2.4rem"} />
+          <h3 className={styles.caracteristicaTitulo}>Adaptabilité</h3>
+          <p className={styles.caracteristicaParrafo}>Nous nous adaptons efficacement à tout défi ou environnement</p>
+        </article>
 
+        <article className={styles.caracteristicaContainer}>
+          <LiaCertificateSolid size={"2.4rem"} />
+          <h3 className={styles.caracteristicaTitulo}>Qualité optimale</h3>
+          <p className={styles.caracteristicaParrafo}>Nous nous concentrons sur la livraison de résultats impeccables</p>
+        </article>
+
+        <article className={styles.caracteristicaContainer}>
+          <IoIosTrendingUp size={"2.4rem"} />
+          <h3 className={styles.caracteristicaTitulo}>Promotion élargie</h3>
+          <p className={styles.caracteristicaParrafo}>Nous assurons que l'événement atteigne un public plus large</p>
+        </article>
+      </section>
+
+      <section className={styles.accionContainerBackground}>
+        <section className={styles.accionContainer}>
+          <h2 className={styles.accionTitulo}>Nos services en action</h2>
+          <p className={styles.accionParrafo}>Découvrez certains des projets que nous avons réalisés pour nos clients</p>
+        </section>
       </section>
       <section className={styles.reseniasContainer}>
-        <h2 className={styles.reseniaTitulo}>écoutez nos clients</h2>
-        <p className={styles.reseniaDescrip}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
+        <section>
+          <h2 className={styles.reseniaTitulo}>écoutez nos clients</h2>
+          <p className={styles.reseniaDescrip}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
+        </section>
         <Resenia />
         <Resenia />
       </section>
