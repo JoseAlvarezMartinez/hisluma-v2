@@ -28,7 +28,7 @@ const Servicios = () => {
         <span>{i + 1}</span> 
       </div>
     ),
-    dotsClass: "slick-dots custom-dots" 
+    dotsClass: "slick-dots custom-dots servicios-dots" 
   };
   return (
 

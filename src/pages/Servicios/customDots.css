@@ -4,7 +4,7 @@
     width: 2rem;
 }
 
-li.slick-active {
+.servicios-dots li.slick-active {
     background-color: #FFCC00;
 }
 .slick-dots li div{

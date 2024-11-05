@@ -39,9 +39,9 @@ const Navbar = () => {
           </div>
 
           <ul className={isOpen ? styles.navBarActivacion : styles.navBarInactiva}>
-            <li><Link>Accueil</Link></li>
-            <li><Link>Services</Link></li>
-            <li><Link>Actualités</Link></li>
+          <li><Link to={"home"}>Accueil</Link></li>
+              <li><Link to={"services"}>Services</Link></li>
+              <li><Link to={"nous"}>Actualités</Link></li>
             <li><Link>Calendrier</Link></li>
             <li><Link>À propos de nous</Link></li>
           </ul>
