@@ -1,9 +1,17 @@
-.footerBackground{
-    background-color: #151515;
+:root {
+    --bg-color: #151515;
+    --yellow-color: #FFCC00;
+    --white-color: #fff;
+}
+
+.footerBackground {
+    background-color: var(--bg-color);
+
     height: 25rem;
     margin-top: 2rem;
 }
-.footerContainer{
+
+.footerContainer {
     width: 90%;
     margin: 0 auto;
 
@@ -15,54 +23,64 @@
     height: 90%;
     padding: 1rem 0;
 }
-.hislumaLogo{
+
+.hislumaLogo {
     width: 12rem;
     object-fit: cover;
 }
-.hislumaTv{
-    color:#FFCC00;
+
+.hislumaTv {
+    color: var(--yellow-color);
     text-transform: uppercase;
     font-style: italic;
 }
-.hislumaTv span,.terminos{
-    color: #fff;
+
+.hislumaTv span,
+.terminos {
+    color: var(--white-color);
 }
-.terminos{
+
+.terminos {
     font-weight: 500;
 }
-.footerGrid{
+
+.footerGrid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.footerGrid a{
-    color: #fff;
+
+.footerGrid a {
+    color: var(--white-color);
     text-decoration: none;
     font-size: 0.75rem;
 }
 
-.footerGrid section{
+.footerGrid section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.redesContainer{
+
+.redesContainer {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
     justify-content: center;
 }
 
-@media only screen and (min-width: 600px){
-    .redesContainer{
-      justify-content: start;
+@media only screen and (min-width: 600px) {
+    .redesContainer {
+        justify-content: start;
     }
 }
-@media only screen and (min-width: 900px){
-    .footerContainer{
+
+@media only screen and (min-width: 900px) {
+    .footerContainer {
         flex-direction: row;
         gap: 4rem;
     }
-    .hislumaLogo{
+
+    .hislumaLogo {
         width: unset;
         height: 4rem;
     }

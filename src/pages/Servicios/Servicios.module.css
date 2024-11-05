@@ -183,6 +183,7 @@
 
 .accionContainerBackground {
     background-color: #F1F1F1;
+
 }
 
 .accionContainerSuperior {
@@ -203,6 +204,7 @@
     margin-top: 0;
 }
 
+
 @media only screen and (min-width: 600px) {
     .headerContainer {
         width: 60%;
@@ -212,27 +214,34 @@
         width: 70%;
         margin: 4rem auto;
     }
-    .serviciosContainer,.caracteristicaContainerResponsive{
+
+    .serviciosContainer,
+    .caracteristicaContainerResponsive {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
-    }   
-    .caracteristicaContainerResponsive{
+    }
+
+    .caracteristicaContainerResponsive {
         margin: 3rem 0;
     }
-    .servicioContainer{
+
+    .servicioContainer {
         flex-direction: column;
         align-items: center;
         gap: 0;
 
         padding: 2rem 0;
     }
-    .serviciosTitulo{
+
+    .serviciosTitulo {
         text-align: center;
     }
-    .videoContainer{
+
+    .videoContainer {
         width: 70%;
     }
+
     .containerResenias {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -245,26 +254,32 @@
     .headerContainer {
         width: 40%;
     }
-    .introduccionContainer{
+
+    .introduccionContainer {
         width: 40%;
     }
-    .videoContainer{
+
+    .videoContainer {
         width: 60%;
     }
-    .caracteristicaContainerResponsive{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 2rem;
+
+    .caracteristicaContainerResponsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
     }
-    .servicioContainer{
+
+    .servicioContainer {
         flex-direction: row;
         gap: 2rem;
     }
-    .serviciosTitulo{
+
+    .serviciosTitulo {
         text-align: start;
     }
-    .reseniasContainer{
+
+    .reseniasContainer {
         max-width: 45rem;
     }
 }

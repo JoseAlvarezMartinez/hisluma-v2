@@ -26,7 +26,7 @@
     border: none;
     padding: 0.5rem 0;
 
-    min-width: 8rem;
+    min-width: 7rem;
 }
 
 .formulario input::placeholder {

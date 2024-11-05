@@ -1,8 +1,8 @@
 import styles from "./Servicios.module.css"
-import { useRef } from "react"
 
 import Footer from "../../components/Footer/Footer"
 import Formulario from "../../components/Formulario/Formulario"
+import ServicioAccion from "../../components/ServicioAccion/ServicioAccion";
 import Resenia from "../../components/Resenias/Resenia"
 
 import { IoCameraOutline, IoLanguage } from "react-icons/io5";
@@ -12,9 +12,9 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { PiSwapThin } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { IoIosTrendingUp } from "react-icons/io";
-import Slider from "react-slick";
 
 const Servicios = () => {
+
   return (
 
     <>
@@ -137,17 +137,18 @@ const Servicios = () => {
         </section>
       </section>
 
-      <section className={styles.accionContainerBackground}>
+      {/* <section className={styles.accionContainerBackground}>
 
         <section className={styles.accionContainer}>
           <section className={styles.accionContainerSuperior}>
             <h2 className={styles.accionTitulo}>Nos services en action</h2>
             <p className={styles.accionParrafo}>Découvrez certains des projets que nous avons réalisés pour nos clients</p>
           </section>
-
-
+            <ServicioAccion />
         </section>
-      </section >
+      </section > */}
+
+      
       <section className={styles.reseniasContainer}>
         <section className={styles.reseniasContainerSuperior}>
           <h2 className={styles.reseniaTitulo}>écoutez nos clients</h2>
@@ -155,9 +156,9 @@ const Servicios = () => {
         </section>
 
         <article className={styles.containerResenias}>
-        <Resenia />
-        <Resenia />
-      </article>
+          <Resenia />
+          <Resenia />
+        </article>
       </section>
 
       <Formulario />
