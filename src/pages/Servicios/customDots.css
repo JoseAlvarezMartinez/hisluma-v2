@@ -1,0 +1,22 @@
+.custom-dots li {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 2rem;
+    width: 2rem;
+}
+
+li.slick-active {
+    background-color: #FFCC00;
+}
+.slick-dots li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 2rem;
+}
+.slick-dots{
+    position:relative;
+    top: 0;
+
+    padding-bottom: 1rem;
+}

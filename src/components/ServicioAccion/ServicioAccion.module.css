@@ -5,6 +5,7 @@
 
 .servicioAccionParrafo {
     max-width: 25rem;
+
 }
 
 .servicioAccionContainer {
@@ -24,10 +25,10 @@
 }
 
 @media only screen and (min-width: 800px) {
-    .servicioAccionContainer {
-        width: 70%;
+    .imagenPrueba, .servicioAccionParrafo{
+        max-width: 40rem;
     }
-    .imagenPrueba{
-        
+    .servicioAccionTitulo{
+       
     }
 }
