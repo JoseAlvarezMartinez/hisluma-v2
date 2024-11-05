@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 
 import styles from "./Home.module.css"
@@ -10,9 +10,9 @@ import destacadoBackground from "../../assets/destacadoBackground.png"
 import HomeCard from "../../components/HomeCard/HomeCard"
 import Temporada from "../../components/Temporada/Temporada"
 import Footer from "../../components/Footer/Footer"
+import Partidos from "../../components/Partidos/Partidos"
 
 import Slider from "react-slick";
-import Partidos from "../../components/Partidos/Partidos"
 
 
 const Home = () => {
