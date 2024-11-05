@@ -1,4 +1,5 @@
 import styles from "./Servicios.module.css"
+import { useRef } from "react"
 
 import Footer from "../../components/Footer/Footer"
 import Formulario from "../../components/Formulario/Formulario"
@@ -11,6 +12,7 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { PiSwapThin } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { IoIosTrendingUp } from "react-icons/io";
+import Slider from "react-slick";
 
 const Servicios = () => {
   return (
@@ -40,7 +42,7 @@ const Servicios = () => {
           <ul className={styles.listaDesordenada}>
             <li><span>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
             <li><span>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
-            <li><span>Création de contenu dynamique:</span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
+            <li><span>Création de contenu dynamique: </span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
           </ul>
         </section>
       </section>
@@ -109,43 +111,53 @@ const Servicios = () => {
       <section className={styles.caracteristicasContainer}>
         <h2 className={styles.caracteristicasTitulo}>Votre événement, nos solutions</h2>
 
-        <article className={styles.caracteristicaContainer}>
-          <FaRegHandshake size={"2.4rem"} />
-          <h3 className={styles.caracteristicaTitulo}>Engagement</h3>
-          <p className={styles.caracteristicaParrafo}>Nous nous investissons avec énergie dans chaque projet</p>
-        </article>
-        <article className={styles.caracteristicaContainer}>
-          <PiSwapThin size={"2.4rem"} />
-          <h3 className={styles.caracteristicaTitulo}>Adaptabilité</h3>
-          <p className={styles.caracteristicaParrafo}>Nous nous adaptons efficacement à tout défi ou environnement</p>
-        </article>
+        <section className={styles.caracteristicaContainerResponsive}>
+          <article className={styles.caracteristicaContainer}>
+            <FaRegHandshake size={"2.4rem"} />
+            <h3 className={styles.caracteristicaTitulo}>Engagement</h3>
+            <p className={styles.caracteristicaParrafo}>Nous nous investissons avec énergie dans chaque projet</p>
+          </article>
+          <article className={styles.caracteristicaContainer}>
+            <PiSwapThin size={"2.4rem"} />
+            <h3 className={styles.caracteristicaTitulo}>Adaptabilité</h3>
+            <p className={styles.caracteristicaParrafo}>Nous nous adaptons efficacement à tout défi ou environnement</p>
+          </article>
 
-        <article className={styles.caracteristicaContainer}>
-          <LiaCertificateSolid size={"2.4rem"} />
-          <h3 className={styles.caracteristicaTitulo}>Qualité optimale</h3>
-          <p className={styles.caracteristicaParrafo}>Nous nous concentrons sur la livraison de résultats impeccables</p>
-        </article>
+          <article className={styles.caracteristicaContainer}>
+            <LiaCertificateSolid size={"2.4rem"} />
+            <h3 className={styles.caracteristicaTitulo}>Qualité optimale</h3>
+            <p className={styles.caracteristicaParrafo}>Nous nous concentrons sur la livraison de résultats impeccables</p>
+          </article>
 
-        <article className={styles.caracteristicaContainer}>
-          <IoIosTrendingUp size={"2.4rem"} />
-          <h3 className={styles.caracteristicaTitulo}>Promotion élargie</h3>
-          <p className={styles.caracteristicaParrafo}>Nous assurons que l'événement atteigne un public plus large</p>
-        </article>
+          <article className={styles.caracteristicaContainer}>
+            <IoIosTrendingUp size={"2.4rem"} />
+            <h3 className={styles.caracteristicaTitulo}>Promotion élargie</h3>
+            <p className={styles.caracteristicaParrafo}>Nous assurons que l'événement atteigne un public plus large</p>
+          </article>
+        </section>
       </section>
 
       <section className={styles.accionContainerBackground}>
+
         <section className={styles.accionContainer}>
-          <h2 className={styles.accionTitulo}>Nos services en action</h2>
-          <p className={styles.accionParrafo}>Découvrez certains des projets que nous avons réalisés pour nos clients</p>
+          <section className={styles.accionContainerSuperior}>
+            <h2 className={styles.accionTitulo}>Nos services en action</h2>
+            <p className={styles.accionParrafo}>Découvrez certains des projets que nous avons réalisés pour nos clients</p>
+          </section>
+
+
         </section>
-      </section>
+      </section >
       <section className={styles.reseniasContainer}>
-        <section>
+        <section className={styles.reseniasContainerSuperior}>
           <h2 className={styles.reseniaTitulo}>écoutez nos clients</h2>
           <p className={styles.reseniaDescrip}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
         </section>
+
+        <article className={styles.containerResenias}>
         <Resenia />
         <Resenia />
+      </article>
       </section>
 
       <Formulario />

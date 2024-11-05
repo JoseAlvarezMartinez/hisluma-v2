@@ -16,7 +16,7 @@ import Partidos from "../../components/Partidos/Partidos"
 
 
 const Home = () => {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,

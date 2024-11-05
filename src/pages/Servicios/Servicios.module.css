@@ -96,6 +96,7 @@
     display: flex;
     align-items: center;
 }
+
 .servicioContainer {
     display: flex;
     justify-content: center;
@@ -140,14 +141,17 @@
 .reseniasContainer {
     margin: 3rem auto;
 }
-.reseniasContainer section{
+
+.reseniasContainerSuperior {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .caracteristicasTitulo {
     font-size: 1.4rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .caracteristicaContainer {
@@ -162,29 +166,43 @@
     font-weight: 600;
 }
 
+.caracteristicasContainer {
+    margin: 4rem auto;
+}
+
+.accionSliderTitulo,
+.accionSliderParrafo {
+    color: #000;
+}
+
 .caracteristicaParrafo {
     color: #000;
     text-align: center;
-    width:17rem;
-
+    width: 17rem;
 }
-.accionContainerBackground{
+
+.accionContainerBackground {
     background-color: #F1F1F1;
 }
-.accionContainer{
+
+.accionContainerSuperior {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.accionTitulo{
+
+
+.accionTitulo {
     margin-bottom: 0.5rem;
 }
-.accionParrafo{
+
+.accionParrafo {
     color: #000;
     text-align: center;
     width: 18rem;
     margin-top: 0;
 }
+
 @media only screen and (min-width: 600px) {
     .headerContainer {
         width: 60%;
@@ -194,11 +212,59 @@
         width: 70%;
         margin: 4rem auto;
     }
-    
+    .serviciosContainer,.caracteristicaContainerResponsive{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+    }   
+    .caracteristicaContainerResponsive{
+        margin: 3rem 0;
+    }
+    .servicioContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        padding: 2rem 0;
+    }
+    .serviciosTitulo{
+        text-align: center;
+    }
+    .videoContainer{
+        width: 70%;
+    }
+    .containerResenias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
     .headerContainer {
         width: 40%;
+    }
+    .introduccionContainer{
+        width: 40%;
+    }
+    .videoContainer{
+        width: 60%;
+    }
+    .caracteristicaContainerResponsive{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 2rem;
+    }
+    .servicioContainer{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .serviciosTitulo{
+        text-align: start;
+    }
+    .reseniasContainer{
+        max-width: 45rem;
     }
 }
