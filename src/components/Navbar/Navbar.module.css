@@ -10,20 +10,21 @@
 .navBarActivacion {
     position: absolute;
     top: 4rem;
+    z-index: 1;
     left: 0;
     width: 100%;
     padding: 0;
     list-style: none;
     background-color: #0E0E0E;
 }
-.navBarActivacion a{
+.navBarActivacion a,.navBarInactiva a{
     color: #fff;
     text-decoration: none;
     display: inline-block;
     margin-left: 1rem;
 }
 .navBarActivacion li{
-    margin: 0.9rem 0;
+    margin: 1.5rem 0;
 }
 .navBarInactiva {
     display: none;
@@ -41,25 +42,20 @@
     gap: 1rem;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 800px) {
     .menuHamburguesa {
         display: none;
     }
 
-    .navBarActivacion {
-        display: block;
-        list-style: none;
-        display: flex;
-    }
-
-    .navBarActivacion a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 0.5rem;
-        font-size: 0.9rem;
-    }
-
     .rightIcons {
         flex-direction: row-reverse;
+    }
+    .navBarInactiva{
+        display: flex;
+
+        list-style: none;
+    }
+    .navBarInactiva{
+        font-size: 0.95rem;
     }
 }
