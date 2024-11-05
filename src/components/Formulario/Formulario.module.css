@@ -18,7 +18,6 @@
         "email email"
         "consulta consulta";
     gap: 0.5rem;
-
 }
 
 .formulario input {
@@ -71,6 +70,8 @@
 .formularioContainer {
     width: 90%;
     margin: 0 auto;
+    
+    padding-bottom: 4rem;
 }
 
 .formularioContainerBackground {
@@ -95,7 +96,6 @@
     align-items: center;
     gap: 0.5rem;
     margin: 1rem 0;
-    
 }
 
 .informacionContainer p {
@@ -117,8 +117,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-
-        padding: 4rem;
     }
 
     .formulario {
