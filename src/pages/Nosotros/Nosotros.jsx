@@ -3,6 +3,12 @@ import styles from "./Nosotros.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa6";
 
+import hislumaNosotrosLogo from "../../assets/hislumaNosotrosLogo.jpg"
+import JDA from "../../assets/JDA.jpg"
+import EuroHockey from "../../assets/EuroHockey.jpg"
+import Tigers from "../../assets/Tigers.png"
+import Canoe from "../../assets/Canoe.png"
+import Roundnet from "../../assets/Roundnet.jpg"
 
 import Clientes from "../../components/Clientes/Clientes";
 import Resenia from "../../components/Resenias/Resenia";
@@ -41,8 +47,8 @@ const Nosotros = () => {
               </span>
             </p>
           </section>
-          <div className={styles.fotoDemo}></div>
-        </section>
+          <img src={hislumaNosotrosLogo} className={styles.fotoLogo} alt="" />
+       </section>
       </main>
 
       <section className={styles.containerInferior}>
@@ -62,7 +68,7 @@ const Nosotros = () => {
         <div className={styles.miembrosContainer}>
 
           <article className={styles.miembroInfo}>
-            <div className={styles.userFoto}></div>
+            <div className={styles.userFotoCamilo}></div>
             <h2 className={styles.nombre}>Camilo Daza</h2>
             <h3 className={styles.rol}>Fondateur</h3>
             <p className={styles.descripcion}>Master en administration Sportive <span>
@@ -71,8 +77,8 @@ const Nosotros = () => {
           </article>
 
           <article className={styles.miembroInfo}>
-            <div className={styles.userFoto}></div>
-            <h2 className={styles.nombre}>Camilo Daza</h2>
+            <div className={styles.userFotoMarion}></div>
+            <h2 className={styles.nombre}>Marion Cormier</h2>
             <h3 className={styles.rol}>Fondateur</h3>
             <p className={styles.descripcion}>Master en administration Sportive <span>
               Master en Marketing Digital</span></p>
@@ -95,11 +101,13 @@ const Nosotros = () => {
           <p className={styles.descripcionCliente}>Rencontrez ceux qui ont fait appel à nos services et ont fait confiance à Hisluma</p>
 
           <article className={styles.clientesContainer}>
-            <Clientes />
-            <Clientes />
-            <Clientes />
-            <Clientes />
-            <Clientes />
+            <Clientes imagen={JDA}/>
+            <Clientes imagen={Tigers}/>
+            <Clientes imagen={Roundnet}/>
+            <Clientes imagen={Canoe}/>
+            <Clientes imagen={EuroHockey}/>
+   
+      
           </article>
         </section>
       </section>

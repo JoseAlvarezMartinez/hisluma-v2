@@ -132,14 +132,18 @@
     margin: 0.5rem 0 1rem;
 }
 
-.userFoto {
+.userFotoCamilo,.userFotoMarion {
     width: 9rem;
     height: 9rem;
-    background-color: black;
+    background-image: url(../../assets/CamiloDaza.jpg);
+    background-size: cover;
+    
 
     border-radius: 50%;
 }
-
+.userFotoMarion{
+    background-image: url(../../assets/MarionCormier.jpg);
+}
 .miembrosContainer {
     display: flex;
     flex-direction: column;
@@ -228,15 +232,16 @@
     margin: 2rem 0;
 }
 
-.fotoDemo {
-    height: 14rem;
+.fotoLogo {
+    height: 100%;
     width: 100%;
     max-width: 30rem;
-    background-color: rgba(128, 128, 128, 0.356);
+    object-fit: cover;
+
 }
+
 @media only screen and (min-width: 600px) {
 
-    .mainContainer,
     .equipoContainer,
     .miembrosContainer,
     .lema,
@@ -246,10 +251,6 @@
 
     .headerContainer {
         width: 55%;
-    }
-
-    .mainContainer {
-        max-width: 30rem;
     }
 
     .introduccionContainer {
@@ -263,8 +264,8 @@
         gap: 1rem;
     }
 
-    .fotoDemo {
-        height: auto;
+    .fotoLogo {
+        width: 100%;
     }
 
     .containerInferior {
@@ -297,28 +298,53 @@
     }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
+    .fotoLogo {
+        max-width: 17rem;
+    }
 
-    .headerContainer{
+    .headerContainer {
         width: 40%;
     }
-    .mainContainer{
+
+    .mainContainer {
         max-width: unset;
         width: 70%;
     }
-    .proposContainer{
+
+    .proposContainer {
         gap: 4rem;
     }
-    .containerInferior section{
+
+    .containerInferior section {
         max-width: 25rem;
     }
-    .equipoContainer,.reseniasContainer{
+
+    .equipoContainer,
+    .reseniasContainer {
         width: 70%;
     }
-    .nuestrosClientesContainer{
+
+    .nuestrosClientesContainer {
         height: 24rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .proposContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .proposContainer section {
+        width: 25rem;
+    }
+
+    .introduccionContainer {
+        width:46rem;
+        margin: 3rem auto;
     }
 }
