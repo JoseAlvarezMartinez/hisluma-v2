@@ -4,7 +4,10 @@ import { Link } from "react-router-dom"
 import styles from "./Home.module.css"
 
 import hislumaLogo from "../../assets/hisluma-logo.png"
-import imagenPrueba from "../../assets/nosotrosBackground.jpg"
+import photographieImagen from "../../assets/Photographie.jpg"
+import marketingDigitalImagen from "../../assets/marketingDigital.jpg"
+import contenidoPublicitario from "../../assets/contenidoPublicitario.jpeg"
+import idiomasImagen from "../../assets/idiomasImagen.jpg"
 import destacadoBackground from "../../assets/destacadoBackground.jpg"
 
 import HomeCard from "../../components/HomeCard/HomeCard"
@@ -73,19 +76,16 @@ const Home = () => {
           </section>
         </div>
         <article className={styles.homeCardContainer}>
-          <HomeCard titulo={"Photographie"} imagen={imagenPrueba} />
-          <HomeCard titulo={"Marketing digital"} imagen={imagenPrueba} />
-          <HomeCard titulo={"Contenu publicitaire"} imagen={imagenPrueba} />
-          <HomeCard titulo={"Support linguistique"} imagen={imagenPrueba} />
+          <HomeCard titulo={"Photographie"} imagen={photographieImagen} />
+          <HomeCard titulo={"Marketing digital"} imagen={marketingDigitalImagen} />
+          <HomeCard titulo={"Contenu publicitaire"} imagen={contenidoPublicitario} />
+          <HomeCard titulo={"Support linguistique"} imagen={idiomasImagen} />
         </article>
 
         <div className={styles.btnContainer}>
           <button className={styles.btnVerMas}>lire plus</button>
         </div>
       </main >
-
-
-
 
       <section className={styles.temporadaContainer}>
         <h2>Actualités</h2>
@@ -124,11 +124,6 @@ const Home = () => {
 
 
       </section>
-
-
-
-
-
 
       <section className={styles.responsiveDestacadoPartidos}>
         <article className={styles.destacadoContainer}>
@@ -178,7 +173,7 @@ const Home = () => {
       </section>
       <section>
         <section className={styles.experienciaContainer}>
-        <section className={`${styles.experienciaBackgroundSuperior}`}>
+          <section className={`${styles.experienciaBackgroundSuperior}`}>
             <section className={styles.oscurecerFondoExperiencia}>
               <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
@@ -186,7 +181,7 @@ const Home = () => {
             </section>
           </section>
         </section>
-        
+
         <section className={styles.experienciaContainer}>
           <section className={styles.experienciaBackgroundMedio}>
             <section className={styles.oscurecerFondoExperiencia}>
@@ -205,7 +200,7 @@ const Home = () => {
               <Link>Abonne-toi</Link>
             </section>
           </section>
-        </section> 
+        </section>
 
       </section>
 
@@ -214,13 +209,13 @@ const Home = () => {
 
 
         <section className={styles.explorarContainerFlex}>
-          <section className={styles.explorarBackground}>
+          <section className={styles.explorarBackgroundInterviews}>
             <section className={`${styles.oscurecerFondo} ${styles.explorarBackgroundContainer}`}>
-              <h3>Podcast</h3>
+              <h3>Interviews</h3>
             </section>
           </section>
 
-          <section className={styles.explorarBackground}>
+          <section className={styles.explorarBackgroundPodcast}>
             <section className={`${styles.oscurecerFondo} ${styles.explorarBackgroundContainer}`}>
               <h3>Podcast</h3>
             </section>

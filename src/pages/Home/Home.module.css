@@ -107,6 +107,7 @@
 /* Camara Seccion */
 .camaraHomeBackground {
     background: url(../../assets/camaraHome.jpg) center/cover;
+    background-position: top;
     aspect-ratio: 1.5;
     position: relative;
 }
@@ -169,9 +170,11 @@
     transition: transform .3s;
     cursor: pointer;
 }
-.btnVerMas:hover{
+
+.btnVerMas:hover {
     transform: scale(1.1);
 }
+
 .sliderContainer {
     margin-top: 1rem;
 }
@@ -269,12 +272,14 @@
     margin: 2rem auto;
 }
 
-.experienciaBackgroundSuperior,.experienciaBackgroundMedio,.experienciaBackgroundInferior {
-   
+.experienciaBackgroundSuperior,
+.experienciaBackgroundMedio,
+.experienciaBackgroundInferior {
+
     position: relative;
     background-size: cover;
 
-    height: 10rem;
+    height: 8rem;
 
     margin: 0 auto;
     margin-top: 1rem;
@@ -283,14 +288,19 @@
     background-size: cover;
     background-position: center 33%;
 }
-.experienciaBackgroundMedio{
-   background-image: url(../../assets/ExperienciaBackgroundMedio.jpg);
-   background-position: center 25%;
+
+.experienciaBackgroundMedio {
+    background-image: url(../../assets/ExperienciaBackgroundMedio.jpg);
+    background-position: center 25%;
 }
-.experienciaBackgroundInferior{
+
+.experienciaBackgroundInferior {
     background-image: url(../../assets/ExperienciaBackgroundParteInferior.jpg);
 }
-.experienciaBackgroundSuperior a, .experienciaBackgroundMedio a,.experienciaBackgroundInferior a {
+
+.experienciaBackgroundSuperior a,
+.experienciaBackgroundMedio a,
+.experienciaBackgroundInferior a {
     color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
@@ -299,7 +309,9 @@
     align-items: center;
 }
 
-.experienciaBackgroundMedio a::after,.experienciaBackgroundSuperior a::after,.experienciaBackgroundInferior a::after{
+.experienciaBackgroundMedio a::after,
+.experienciaBackgroundSuperior a::after,
+.experienciaBackgroundInferior a::after {
     content: ">";
     color: #FFCC00;
     font-size: 1.2rem;
@@ -323,13 +335,20 @@
     align-items: center;
 }
 
-.explorarBackground {
+.explorarBackgroundInterviews,
+.explorarBackgroundPodcast {
     max-width: 30rem;
     width: 100%;
     height: 15rem;
-    background-image: url(../../assets/explorarBackground.png);
+    background-image: url(../../assets/Interviews.JPG);
     position: relative;
     background-size: cover;
+    background-position: center;
+}
+
+.explorarBackgroundPodcast {
+    background-image: url(../../assets/Podcast.jpg);
+    background-position: center 30%;
 }
 
 .explorarBackgroundContainer {
@@ -385,7 +404,7 @@
         min-width: 15rem;
         width: 100%;
         height: 100%;
-        background-position: 60%;
+
     }
 
     .listaDesordenada {
@@ -454,7 +473,8 @@
         max-width: 70%;
     }
 
-    .responsiveDestacadoPartidos,.destacadoContainer {
+    .responsiveDestacadoPartidos,
+    .destacadoContainer {
         width: 90%;
         margin: 0 auto;
     }
@@ -466,5 +486,14 @@
     .partidosGrid {
         display: flex;
         flex-direction: column;
+    }
+
+    .experienciaContainer {
+        width: 70%;
+    }
+
+    .explorarBackgroundInterviews,
+    .explorarBackgroundPodcast {
+        max-width: 39rem;
     }
 }

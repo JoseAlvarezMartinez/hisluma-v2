@@ -6,6 +6,7 @@ const HomeCard = ({ titulo, imagen }) => {
         className={styles.homeCardContainer}
         style={{
             backgroundImage: `url(${imagen})`,
+            backgroundPosition:"center 20%",
             backgroundSize: "cover",
             maxWidth:"25rem",
             aspectRatio: 1,
