@@ -5,7 +5,7 @@ import styles from "./Home.module.css"
 
 import hislumaLogo from "../../assets/hisluma-logo.png"
 import imagenPrueba from "../../assets/nosotrosBackground.jpg"
-import destacadoBackground from "../../assets/destacadoBackground.png"
+import destacadoBackground from "../../assets/destacadoBackground.jpg"
 
 import HomeCard from "../../components/HomeCard/HomeCard"
 import Temporada from "../../components/Temporada/Temporada"
@@ -178,7 +178,7 @@ const Home = () => {
       </section>
       <section>
         <section className={styles.experienciaContainer}>
-          <section className={styles.experienciaBackground}>
+        <section className={`${styles.experienciaBackgroundSuperior}`}>
             <section className={styles.oscurecerFondoExperiencia}>
               <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
@@ -186,8 +186,9 @@ const Home = () => {
             </section>
           </section>
         </section>
+        
         <section className={styles.experienciaContainer}>
-          <section className={styles.experienciaBackground}>
+          <section className={styles.experienciaBackgroundMedio}>
             <section className={styles.oscurecerFondoExperiencia}>
               <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
@@ -195,16 +196,19 @@ const Home = () => {
             </section>
           </section>
         </section>
+
         <section className={styles.experienciaContainer}>
-          <section className={styles.experienciaBackground}>
+          <section className={styles.experienciaBackgroundInferior}>
             <section className={styles.oscurecerFondoExperiencia}>
               <h2 className={styles.experienciaTitulo}>Experimente l´ action du sport avec <span>hisluma</span></h2>
 
               <Link>Abonne-toi</Link>
             </section>
           </section>
-        </section>
+        </section> 
+
       </section>
+
       <section className={styles.explorarContainer}>
         <h2 className={styles.explorarTitulo}>Explorer d´ autres sujets</h2>
 

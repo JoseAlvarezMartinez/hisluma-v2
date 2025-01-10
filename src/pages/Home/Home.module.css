@@ -269,18 +269,28 @@
     margin: 2rem auto;
 }
 
-.experienciaBackground {
-    background-image: url(../../assets/experienciaBackground.png);
+.experienciaBackgroundSuperior,.experienciaBackgroundMedio,.experienciaBackgroundInferior {
+   
     position: relative;
     background-size: cover;
 
-    height: 6rem;
+    height: 10rem;
 
     margin: 0 auto;
     margin-top: 1rem;
-}
 
-.experienciaBackground a {
+    background-image: url(../../assets/experienciaBackgroundParteSuperior.jpg);
+    background-size: cover;
+    background-position: center 33%;
+}
+.experienciaBackgroundMedio{
+   background-image: url(../../assets/ExperienciaBackgroundMedio.jpg);
+   background-position: center 25%;
+}
+.experienciaBackgroundInferior{
+    background-image: url(../../assets/ExperienciaBackgroundParteInferior.jpg);
+}
+.experienciaBackgroundSuperior a, .experienciaBackgroundMedio a,.experienciaBackgroundInferior a {
     color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
@@ -289,7 +299,7 @@
     align-items: center;
 }
 
-.experienciaBackground a::after {
+.experienciaBackgroundMedio a::after,.experienciaBackgroundSuperior a::after,.experienciaBackgroundInferior a::after{
     content: ">";
     color: #FFCC00;
     font-size: 1.2rem;
