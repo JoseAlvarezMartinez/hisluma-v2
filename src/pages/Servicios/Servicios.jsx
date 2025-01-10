@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer"
 import Formulario from "../../components/Formulario/Formulario"
 import ServicioAccion from "../../components/ServicioAccion/ServicioAccion";
 import Resenia from "../../components/Resenias/Resenia"
+import videoImagen from "../../assets/VideoImg.jpg"
 
 import { IoCameraOutline, IoLanguage } from "react-icons/io5";
 import { MdScreenshotMonitor } from "react-icons/md";
@@ -18,17 +19,17 @@ import Slider from "react-slick";
 const Servicios = () => {
   const settings = {
     dots: true,
-    arrows:false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: (i) => (
       <div>
-        <span>{i + 1}</span> 
+        <span>{i + 1}</span>
       </div>
     ),
-    dotsClass: "slick-dots custom-dots servicios-dots" 
+    dotsClass: "slick-dots custom-dots servicios-dots"
   };
   return (
 
@@ -51,14 +52,18 @@ const Servicios = () => {
       </section>
 
       <section className={styles.videoContainerBackground}>
-        <section className={styles.videoContainer}>
-          <h2>vidéo</h2>
+        <section className={styles.videoContainerImagen}>
+          <section className={styles.videoContainer}>
+            <h2>vidéo</h2>
 
-          <ul className={styles.listaDesordenada}>
-            <li><span>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
-            <li><span>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
-            <li><span>Création de contenu dynamique: </span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
-          </ul>
+            <ul className={styles.listaDesordenada}>
+              <li><span>Retransmission/Diffusion en direct d'événements:</span> conférences, événements corporatifs, événements sportifs, forums, salons, et autres manifestations nécessitant ce service</li>
+              <li><span>Montage Vidéo</span> professionnel pour des projets créatifs et promotionnels</li>
+              <li><span>Création de contenu dynamique: </span>reels, TikTok, Shorts pour booster la présence sur les réseaux sociaux</li>
+            </ul>
+          </section>
+
+          <img className={styles.videoImagen} src={videoImagen} alt="" />
         </section>
       </section>
 

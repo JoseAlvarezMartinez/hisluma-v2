@@ -60,6 +60,7 @@
     margin: 0 auto;
 }
 
+
 .videoContainerBackground {
     background-color: #F1F1F1;
     padding: 1rem 0;
@@ -204,6 +205,17 @@
     margin-top: 0;
 }
 
+.videoContainerImagen {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoImagen {
+    width: 90%;
+    height: 25rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
 
 @media only screen and (min-width: 600px) {
     .headerContainer {
@@ -247,10 +259,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
-    /* .accionContainerBackground {
-  
-        min-height: 33rem;
-    } */
+
+    .videoImagen {
+        width: 70%;
+    }
 
 }
 
@@ -285,6 +297,17 @@
 
     .reseniasContainer {
         max-width: 60%;
+    }
+
+    .videoContainerImagen {
+        flex-direction: row;
+        gap: 4rem;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .videoImagen {
+        width: 30rem;
     }
 
 }

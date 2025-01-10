@@ -1,11 +1,11 @@
 import styles from "./ServicioAccion.module.css"
 
-import imagenPrueba from "../../assets/experienciaBackground.png"
+import ServiciosEnAccion from "../../assets/ServiciosEnAccion.jpg"
 
 const ServicioAccion = () => {
     return (
         <section className={styles.servicioAccionContainer}>
-            <img className={styles.imagenPrueba} src={imagenPrueba} alt="" />
+            <img className={styles.ServiciosEnAccion} src={ServiciosEnAccion} alt="" />
             <h3 className={styles.servicioAccionTitulo}>Diffusion EN DIRECT réalisée pour CLIENT 1</h3>
             <p className={styles.servicioAccionParrafo}>Placer ici une description du projet réalisé pour le client, les aspects les plus pertinents et mentionner le service utilisé
 
